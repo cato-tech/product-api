@@ -27,6 +27,7 @@ async function runTest() {
   const items = await getAllRes.json();
   assert.strictEqual(items.length >= 1, true);
   console.log('✓ Read All Products passed');
+  console.log('✓ Thi thực hành - test script mới');
 
   // Test Read One
   const getOneRes = await fetch('http://localhost:3000/api/products/P001');
