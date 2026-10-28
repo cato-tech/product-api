@@ -32,6 +32,7 @@ async function runTest() {
   console.log('✓ Thi thực hành - test script mới2');
   console.log('✓ Thi thực hành - test script mới3');
 
+
   // Test Read One
   const getOneRes = await fetch('http://localhost:3000/api/products/P001');
   const oneItem = await getOneRes.json();
@@ -42,7 +43,7 @@ async function runTest() {
   const updateRes = await fetch('http://localhost:3000/api/products/P001', {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ price: 120 })
+    body: JSON.stringify({ price: 150 })
   });
   const updatedItem = await updateRes.json();
   assert.strictEqual(updateRes.status, 200);
@@ -64,3 +65,4 @@ runTest().catch((err) => {
   console.error('Test Failed:', err);
   process.exit(1);
 });
+
