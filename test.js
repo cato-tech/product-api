@@ -29,6 +29,7 @@ async function runTest() {
   console.log('✓ Read All Products passed');
   console.log('✓ Thi thực hành - test script mới');
   console.log('✓ Thi thực hành - test script mới1');
+  console.log('✓ Thi thực hành - test script mới2');
 
   // Test Read One
   const getOneRes = await fetch('http://localhost:3000/api/products/P001');
